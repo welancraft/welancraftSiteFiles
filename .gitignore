@@ -1,2 +1,9 @@
+# ignore include folders
 .vscode/*
 resources/*
+phpError/*
+
+# ignore include files
+databaseLink.php
+
+# ignore exclude
