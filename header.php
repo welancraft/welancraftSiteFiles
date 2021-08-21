@@ -20,12 +20,11 @@ $headerContentBox07 = "<div class=headerContentBox id=g><a href=\"https://mc.roy
 // ContentList
 $headerContentList = array($headerContentBox02,$headerContentBox03,$headerContentBox04,
                            $headerContentBox05,$headerContentBox06,$headerContentBox07);
-
-echo "<div id=header>";
-echo "<div id=headerContent>";
-echo $headerContentBox01,$headerContentBox07,$headerContentBox06,$headerContentBox05,
-     $headerContentBox04,$headerContentBox03,$headerContentBox02;
-echo "</div>";
-echo "</div>";
-
 ?>
+
+<div id=header>
+    <div id=headerContent>
+        <?php echo $headerContentBox01,$headerContentBox07,$headerContentBox06,$headerContentBox05,
+                   $headerContentBox04,$headerContentBox03,$headerContentBox02; ?>
+    </div>
+</div>
