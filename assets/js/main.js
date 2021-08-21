@@ -33,6 +33,11 @@ function picshowTextChange(value) {
     picshowImage.alt = "图片显示错误";
     picshowImage.id = "picshowPic";
     picshowImage.src = picshowPic[value];
+
+    if (picshowImage.src == "undefined") {
+        picshowImage.src = picshowPic["100"]; // 之后再添加出错图片
+        value = "100";
+    }
     
     /* 加入页面中 */
     var picshow = document.getElementById("picshow");
@@ -60,5 +65,4 @@ window.onload = function() {
 
     /* 更改图片栏 */
     picshowTextChange(urlPage);
-
 }
