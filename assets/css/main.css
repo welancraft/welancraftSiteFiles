@@ -1,0 +1,124 @@
+/* 值排列顺序：背景，长宽高，字体，自身（行内距等），位置 */
+
+body {
+    margin: 0px; /* 取消浏览器与页面边距 */
+    padding: 0px;
+}
+
+/* 页眉样式 header*/
+
+#header,#headerContent,.headerContentBox {
+    background-color: black;
+}
+
+#header {
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+}
+
+#headerContent {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.headerContentBox {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+#a {
+    font-size: 30px;
+    user-select: none;
+    float: left;
+}
+
+#b,#c,#d,#e,#f,#g {
+    float: right;
+    margin-right: 5%;
+    margin-top: 6px;
+}
+
+/* 页眉超链接样式 */
+
+.headerContentBox a {
+    color: azure;
+    text-decoration: none;
+}
+
+.headerContentBox {
+    border-bottom: 1px black solid;
+}
+
+.headerContentBox:hover {
+    border-bottom: 1px greenyellow solid;
+}
+
+/* 图片栏样式 picshow */
+
+#picshow {
+    width: 100%;
+    background-color: black;
+    position: relative;
+    top: 0px;
+}
+
+#picshowPic {
+    width: 100%;
+    opacity: 0.6;
+    position: absolute;
+    z-index: 0;
+}
+
+#picshowText {
+    width: 80%;
+    text-align: center;
+    font-size: 50px;
+    user-select: none;
+    color: azure;
+    position: absolute;
+    left: 10%;
+    z-index: 1;
+}
+
+/* 正文内容样式 article*/
+
+#article {
+    width: 100%;
+    background-color: white;
+    color: black;
+    position: relative;
+}
+
+/* 页脚样式 footer */
+
+#footer {
+    width: 100%;
+    background-color: black;
+    font-size: 12px;
+    color: azure;
+    background: url(/resources/siteSources/footer.png) repeat-y scroll top;
+    text-align: center;
+    position: relative;
+}
+
+/* 页脚超链接样式 */
+
+#footer a {
+    color: azure;
+    text-decoration: none;
+    border-bottom: 1px black solid;
+}
+
+#footer a:hover {
+    border-bottom: 1px greenyellow solid;
+}
+
+/* 其他 */
+
+#picshow,#article,#footer {
+    display: inline-block;
+}
