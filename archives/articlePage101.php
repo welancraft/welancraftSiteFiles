@@ -20,7 +20,7 @@
 <?php $exitence = count($hosts); // 获取服务器个数 ?>
 <?php include dirname(dirname(__FILE__)) . '/serverDataDisplay/data.php'; ?>
     <hr>
-    <h3>目前welancraft下公开的服务器共有<font class=content><?php echo $exitence; ?></font>个</h3>
+    <h3>目前公开的服务器共有<font class=content><?php echo $exitence; ?></font>个</h3>
 <?php for ($id = 1; $id <= $exitence; $id++) : ?>
     <hr>
     <h4>服务器地址：<font class=content><?php echo $names[$id]; ?></font></h4>

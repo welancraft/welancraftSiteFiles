@@ -1,0 +1,17 @@
+#articlePage105 p {
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+/* 设置超链接 */
+
+#articlePage105 a {
+    color: chartreuse;
+    text-decoration: none;
+    border-bottom: 1px black solid;
+}
+
+#articlePage105 a:hover {
+    border-bottom: 1px greenyellow solid;
+}

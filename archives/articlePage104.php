@@ -13,3 +13,11 @@
 <!-- 加载js文件 -->
 
 <script type="text/javascript" src="../assets/js/articlePage104.js"></script>
+
+<div id=articlePage104>
+    <!-- 在此输入内容 -->
+    <p>展示功能仍在完善中</p>
+    <p>若有意愿加入网页的制作与完善</p>
+    <p>请关注 <a href="https://github.com/royenheart/welancraftSiteFiles">本网页发布地址</a></p>
+    <p>感谢您的关注与参与</p>
+</div>

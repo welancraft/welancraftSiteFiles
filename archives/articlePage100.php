@@ -17,7 +17,7 @@
 <!-- 正文 首页内容 -->
 
 <div id=articlePage100>
-    <h1>WeLanCraft是什么？</h1>
+    <h2>WeLanCraft是什么？</h2>
     <p>WeLanCraft是面向兰州大学同学的Minecraft服务器集合，同时依托于兰州大学动漫社MC分部</p>
     <p>为什么是“集合”？</p>
     <p>因为WeLanCraft本质上是作为一个平台，使兰大有MC服务器的服主可以把自己的MC服务器提供给平台内所有兰大学子游玩</p>

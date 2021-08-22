@@ -13,3 +13,7 @@
 <!-- 加载js文件 -->
 
 <script type="text/javascript" src="../assets/js/articlePage102.js"></script>
+
+<div id=articlePage102>
+    <p>公告功能未开放，请耐心等待</p>
+</div>
