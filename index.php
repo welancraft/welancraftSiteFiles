@@ -2,7 +2,7 @@
 
 /**
  * welancraft.top我的世界服务器网页文件-主界面
- * @author royenheart
+ * @author RoyenHeart
  */
 
 /* 数据获取 */
@@ -40,12 +40,12 @@ include_once __DIR__ . '/databaseLink.php';
 
     <!-- 正文 article -->
 
-    <!-- 由于服务端是php先执行编译，因此只能使用php判断 -->
+    <!-- 由于服务端是php先执行编译，因此使用php判断 -->
 
     <div id=article>
         <?php
             include __DIR__.'/pageDeliver.php';
-            $curl = getParams();
+            $curl = getParams(); // $curl存储获得参数信息，并以键值对的形式存储
             if (!empty($curl)) {
                 if ($curl["page"] == "100") {
                     include __DIR__.'/archives/articlePage100.php';
