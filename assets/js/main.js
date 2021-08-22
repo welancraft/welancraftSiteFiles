@@ -86,7 +86,7 @@ function picshowTextChange(value) {
 function load() {
     let urlPage = getUrlString("page"); // 获取page参数，str字符串形式
 
-    /* 更改图片栏 */
+    /* 更改图片栏以及各大部分位置 */
 
     picshowTextChange(urlPage);
 }
