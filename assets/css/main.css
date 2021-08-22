@@ -91,6 +91,7 @@ body {
     width: 100%;
     background-color: whitesmoke;
     position: relative;
+    top: 0px;
 }
 
 /* 页脚样式 footer */
@@ -103,6 +104,7 @@ body {
     background: url(/resources/siteSources/footer.png) repeat-y scroll top;
     text-align: center;
     position: relative;
+    top: 0px;
 }
 
 /* 页脚超链接样式 */
