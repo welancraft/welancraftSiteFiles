@@ -2,7 +2,6 @@
 
 /**
  * 获取服务器信息
- * @author RoyenHeart
  */
 
 ?>
@@ -11,7 +10,11 @@
 
 <link rel="stylesheet" href="../assets/css/articlePage101.css" />
 
-<!-- 获取服务器信息并输出 -->
+<!-- 加载js文件 -->
+
+<script type="text/javascript" src="../assets/js/articlePage101.js"></script>
+
+<!-- 正文 获取服务器信息并输出 -->
 
 <div id=articlePage101>
 <?php $exitence = count($hosts); // 获取服务器个数 ?>
@@ -26,10 +29,7 @@
     <p>原始服务器地址：<font class=content><?php echo $hosts[$id].":"."$ports[$id]"; ?></font></p>
     <p>平台：<font class=content><?php echo $platforms[$id]; ?></font></p>
     <p>游戏类型：<font class=content><?php echo $gametypes[$id]; ?></font></p>
-    <p>兼容游戏版本：<font class=content><?php echo $versions[$id]; ?></font></p>
-    <p>服务器使用的软件或核心：<font class=content><?php echo $softwares[$id]; ?></font></p>
     <p>可容纳最大玩家数：<font class=content><?php echo $players_maxs[$id]; ?></font></p>
-    <p>在线玩家数：<font class=content><?php echo $players_onlines[$id]; ?></font></p>
     <h4>目前在线玩家 <font class=content><?php echo $players_onlines[$id]; ?></font>/<font class=content><?php echo $players_maxs[$id]; ?></font></h4>
     <?php if (is_array($PlayersList[$id])) : ?>
         <?php foreach ($PlayersList[$id] as $Player) : ?>
@@ -40,7 +40,7 @@
             <?php endif; ?>
         <?php endforeach; ?>
     <?php else : ?>
-        <?php if ($InfoPings[$id] !== false) : ?>
+        <?php if ($InfoPings[$id] !== false && $players_onlines[$id] !== 0) : ?>
             <p>使用 Ping 查询无法取得具体玩家数据</p>
         <?php else : ?>
             <p>无玩家在线</p>       

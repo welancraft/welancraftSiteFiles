@@ -1,0 +1,18 @@
+#articlePage100 h1,#articlePage100 h2,#articlePage100 p {
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+/* 设置超链接格式 */
+
+#articlePage100 a {
+    color: chartreuse;
+    text-decoration: none;
+    border-bottom: 1px black solid;
+}
+
+#articlePage100 a:hover {
+    border-bottom: 1px greenyellow solid;
+}
+
