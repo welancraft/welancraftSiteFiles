@@ -1,7 +1,9 @@
 # welancraftSiteFiles
 welancraft.top我的世界服务器网页文件
 
-目前仍在施工中⚠
+[网页访问地址](https://mc.royenheart.com)
+
+⚠目前仍在施工中⚠
 
 此项目遵循 [MPL-2.0](https://github.com/royenheart/welancraftSiteFiles/blob/main/LICENSE) 协议
 
@@ -14,8 +16,38 @@ welancraft.top我的世界服务器网页文件
 - 完善各界面内容
 - 丰富动画细节
 - 精简代码
-- 添加文档名称说明
-- 添加文件结构展示
+
+## 文件结构与说明
+
+```intro
+
+welancraft
+│   databaseLink.php  =>  获取数据库数据
+│   header.php  =>  页眉
+│   index.php  =>  正文
+│   pageDeliver.php  =>  获取url参数
+│   siteIcon.jpg  =>  网页图标
+│
+├───archives
+│   │   正文部分内容，详情请见文件夹内README.md文件
+│   │
+│   └───articlePage102
+│           “公告“栏公告内容
+│
+├───assets
+│   ├───css
+│   │       各界面所需css文件
+│   │
+│   └───js
+│           各界面所需js文件
+│
+├───resources
+│       网页所需资源，如图片等，若需部署请自行修改地址和结构
+│
+└───serverDataDisplay
+        MC服务器信息获取，详情请见文件夹内README.md文件
+
+```
 
 ## 关于协作
 
