@@ -16,22 +16,24 @@ $hosts = array();
 $ports = array();
 $names = array();
 $owners = array();
+$subdomains = array();
 
 /* 连接数据库 */
-$con = mysqli_connect('数据库地址','用户名','用户密码','使用的数据库');
+$con = mysqli_connect('localhost','welan','welancraft','dataWelan');
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }
 
 /* 获取服务器数据 */
-$sql="SELECT * FROM 存放数据的数据表名称"; // 获取数据表指令
+$sql="SELECT * FROM serverList"; // 获取数据表指令
 $result = mysqli_query($con,$sql);
 
 while($row = mysqli_fetch_array($result)) {
-    $hosts[count($hosts) + 1] = $row['host'];
-    $ports[count($ports) + 1] = $row['port'];
-    $names[count($names) + 1] = $row['name'];
-    $owners[count($owners) + 1] = $row['owner'];
+    $hosts[count($hosts) + 1] = $row['host']; // 获取服务器地址
+    $ports[count($ports) + 1] = $row['port']; // 获取服务器接口
+    $names[count($names) + 1] = $row['name']; // 获取服务器名字，也是进入地址
+    $owners[count($owners) + 1] = $row['owner']; // 获取服主信息
+    $subdomains[count($subdomains) + 1] = $row['subdomain']; // 子域名
 }
 
 mysqli_close($con);

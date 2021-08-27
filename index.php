@@ -8,6 +8,8 @@
 /* 数据获取 */
 include_once __DIR__ . '/databaseLink.php';
 
+include_once __DIR__.'/fileExist.php';
+
 ?>
 
 <!DOCTYPE html>

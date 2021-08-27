@@ -1,4 +1,4 @@
-#articlePage101 h4,#articlePage101 h3,#articlePage101 p {
+#articlePage101 h4, #articlePage101 h3,#articlePage101 p {
     font-weight: bold;
     text-align: center;
     color: black;
@@ -8,3 +8,55 @@
     color: greenyellow;
 }
 
+#serverIcon {
+    width: 10%;
+    position: relative;
+    left: 45%;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* 设置更多信息样式 */
+
+#more {
+    width: 100%;
+    text-align: center;
+}
+
+#more #info {
+    text-decoration: underline;
+    color: black;
+}
+
+#more #info:hover {
+    color: greenyellow;
+}
+
+#more div{
+    width: 100%;
+    max-height: 1000px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#more div{
+    overflow: hidden;
+    width: 100%;
+    max-height: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: max-height 0.3s;
+    /* Firefox */
+    -moz-transition: max-height 0.3s;
+    /* Safari and Chrome */
+    -webkit-transition: max-height 0.3s;
+    /* Opera */
+    -o-transition: max-height 0.3s;
+}
+
+#more:hover div {
+    max-height: 1000px;
+    overflow-y: auto;
+}
+
+#more .content {
+    color: darkorange;
+}
