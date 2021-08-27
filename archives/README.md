@@ -13,5 +13,6 @@
 | default.php                 | 当对应文件未找到时或者内容未完成时显示错误 |        |
 | donate.php                  | 提供服务器捐赠信息内容                     |        |
 | articlePage102              | 存放各个公告内容                           | 文件夹 |
-| welancraft下子域名.日期.php | 提供各服务器公告内容                       |        |
-| default.20210821.php        | 置顶公告                                   |        |
+| noticeGet.php                   | 获取公告列表                               |        |
+| welancraft下子域名.日期 | 提供各服务器公告内容                       |        |
+| default        | 置顶公告                                   |        |
