@@ -5,6 +5,9 @@
  * @author RoyenHeart
  */
 
+/**
+ * @param string $fileAddr file address  
+ */ 
 function isFileExist($fileAddr) {
 
     if(preg_match("/http:\/\//",$fileAddr) == 1 || preg_match("/https:\/\//",$fileAddr) == 1){

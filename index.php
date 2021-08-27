@@ -5,10 +5,15 @@
  * @author RoyenHeart
  */
 
-/* 数据获取 */
+/* 数据库信息获取 */
 include_once __DIR__ . '/databaseLink.php';
 
+/* 获取判断文件存在方法 */
 include_once __DIR__.'/fileExist.php';
+
+/* 获取传入的url参数 */
+include __DIR__ . '/pageDeliver.php';
+$curl = getParams(); // $curl存储获得参数信息，并以键值对的形式存储
 
 ?>
 
@@ -46,8 +51,6 @@ include_once __DIR__.'/fileExist.php';
         <br>
         <div id=articlePage>
             <?php
-            include __DIR__ . '/pageDeliver.php';
-            $curl = getParams(); // $curl存储获得参数信息，并以键值对的形式存储
             if (!empty($curl)) {
                 if ($curl["page"] == "100") {
                     include __DIR__ . '/archives/articlePage100.php';
