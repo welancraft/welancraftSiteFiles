@@ -15,6 +15,11 @@ include_once __DIR__.'/fileExist.php';
 include __DIR__ . '/pageDeliver.php';
 $curl = getParams(); // $curl存储获得参数信息，并以键值对的形式存储
 
+/* 网络文件存放地址 */
+define('SERVER_ROOT',"https://mc.royenheart.com"); // 网络根地址
+define('SERVER_SRC',SERVER_ROOT."/resources"); // 网页资源文件地址
+define('SERVER_ARCHIVE',SERVER_SRC."/archives"); // 各界面内容存放地址
+
 ?>
 
 <!DOCTYPE html>

@@ -24,7 +24,7 @@
     <h3>目前公开的服务器共有<label class=content><?php echo $exitence; ?></label>个</h3>
 <?php
     /* 获取图片地址 */
-    $serverIconDir = "https://mc.royenheart.com/resources/serverIcons/";
+    $serverIconDir = SERVER_SRC."/serverIcons/";
     $imgSrc = array();
     for ($id = 1;$id <= $exitence;$id++) {
         $imgSrc[$id] = $serverIconDir."$subdomains[$id].serverIcon.png";

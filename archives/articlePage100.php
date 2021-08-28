@@ -30,7 +30,7 @@
     <p>WeLanCraft成立于2021年8月左右，因部内有多位服主分享，为更好让同学游玩而生</p>
     <p>已有的服务器除原地址外均可以通过 对应子域名.welancraft.top 进入</p>
     <p>服务器详细情况可加群或者点击此界面上方导航栏“服务器”了解</p>
-    <p><a href="https://mc.royenheart.com/index.php?page=101">点我直接跳转</a></p>
+    <p><a href="<?php echo SERVER_ROOT."/index.php?page=101"; ?>">点我直接跳转</a></p>
     <p>由于时间还有经费等问题，我们还在不断壮大，在此感谢各位的支持</p>
     <h2>我们的初衷</h2>
     <p>WeLanCraft的初衷是为兰州大学所有热爱MC的学子提供一个交流的平台</p>
@@ -40,5 +40,5 @@
     <p>我们有自己的聊天群，也有由众服主提供的MC服务器</p>
     <p>建议可以先加入兰大动漫社MC分部，作为主要群聊会提供服务器的信息</p>
     <p>此界面上方导航栏点击“加入”</p>
-    <p>或者<a href="https://mc.royenheart.com/index.php?page=103">点我</a> </p>
+    <p>或者<a href="<?php echo SERVER_ROOT."/index.php?page=103"; ?>">点我</a> </p>
 </div>
