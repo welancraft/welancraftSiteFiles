@@ -19,13 +19,13 @@ $owners = array();
 $subdomains = array();
 
 /* 连接数据库 */
-$con = mysqli_connect('localhost','welan','welancraft','dataWelan');
+$con = mysqli_connect('服务器地址','用户名','用户密码','使用的数据库');
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }
 
 /* 获取服务器数据 */
-$sql="SELECT * FROM serverList"; // 获取数据表指令
+$sql="SELECT * FROM 数据表名称"; // 获取数据表指令
 $result = mysqli_query($con,$sql);
 
 while($row = mysqli_fetch_array($result)) {
