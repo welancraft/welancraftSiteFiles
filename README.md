@@ -62,7 +62,7 @@ Windows上可使用Xampp集成环境
 
 ### Issues
 
-[访问官网](https://nc.royenheart.com)，若有任何Bug欢迎于Issues中提出
+[访问官网](https://mc.royenheart.com)，若有任何Bug欢迎于Issues中提出
 
 ### Code
 
