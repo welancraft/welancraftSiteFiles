@@ -11,7 +11,6 @@ welancraft.top我的世界服务器网页文件
 
 ## TODO
 
-- 解决手机端浏览器因下滑底部产生空白块的问题
 - 完善各界面内容
 - 丰富动画细节
 - 公告内容自动生成（方便公告的填写）
@@ -53,11 +52,21 @@ welancraft
 
 ## 关于使用
 
-可以部署于自己的WebServer，请自行添加resources资源文件，数据库，index.php界面中的网络地址
+可以部署于自己的Web服务器，请自行添加resources资源文件，数据库，index.php界面中的网络地址
+
+Linux上可自行搭建LAMP，LNMP等环境
+
+Windows上可使用Xampp集成环境
 
 ## 关于协作
 
-可以帮忙修改archives中各界面的内容展示，可自行修改assets文件夹中对应界面的css和js文件
+### Issues
+
+[访问官网](https://nc.royenheart.com)，若有任何Bug欢迎于Issues中提出
+
+### Code
+
+可修改archives中各界面的内容展示，可自行修改assets文件夹中对应界面的css和js文件
 
 请注意不要和已有的函数定义等发生冲突，如的确需要进行修改，请修改assets/js/main.js和assets/css/main.css
 
