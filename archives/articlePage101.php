@@ -66,4 +66,6 @@
         </div>
     </div>
 <?php endfor; ?>
+    <hr>
+    <p>服务器信息查询借力于<a href="https://github.com/MCNewsTools/webpage-minecraft-server-status">MCNewsTools</a></p>
 </div>

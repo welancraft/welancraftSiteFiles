@@ -82,17 +82,7 @@ define('SERVER_ARCHIVE',SERVER_SRC."/archives"); // 各界面内容存放地址
 
     <!-- 页脚 footer -->
 
-    <div id=footer>
-        <br>
-        <p>©2021-2021 WeLanCraft 版权所有</p>
-        <p>若非特别说明</p>
-        <p>以上内容以 <a href="https://github.com/royenheart/welancraftSiteFiles/blob/main/LICENSE">MPL-2.0</a> 协议提供</p>
-        <p>内容已于 <a href="https://github.com/royenheart/welancraftSiteFiles">GITHUB</a> 上发布</p>
-        <p>浙ICP备2020042582号</p>
-        <p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=62012302000279"><img src="/resources/beianIcon.png" />甘公网安备62012302000279号</a>
-        </p>
-        <br>
-    </div>
+    <?php include __DIR__.'/footer.php'; ?>
 
 </body>
 

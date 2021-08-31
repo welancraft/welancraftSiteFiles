@@ -60,3 +60,14 @@
 #more .content {
     color: darkorange;
 }
+
+/* 设置超链接样式 */
+
+#articlePage101 a {
+    text-decoration: none;
+    color: black;
+}
+
+#articlePage101 a:hover {
+    color: greenyellow;
+}
