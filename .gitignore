@@ -2,6 +2,7 @@
 .vscode/*
 resources/*
 phpError/*
+fileBackup/*
 
 # ignore include files
 databaseLink.php

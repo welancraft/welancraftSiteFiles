@@ -5,14 +5,18 @@
  * @author RoyenHeart
  */
 
+/* 数据对象声明获取 */
+include_once __DIR__.'/siteDataClass.php';
+
+/* 网页错误 */
+include_once __DIR__.'/siteException.php';
+
+/* 数据获取函数 */
+include_once __DIR__.'/funcs.php';
+
 /* 数据库信息获取 */
 include_once __DIR__ . '/databaseLink.php';
 
-/* 获取判断文件存在方法 */
-include_once __DIR__.'/fileExist.php';
-
-/* 获取传入的url参数 */
-include __DIR__ . '/pageDeliver.php';
 $curl = getParams(); // $curl存储获得参数信息，并以键值对的形式存储
 
 /* 网络文件存放地址 */
@@ -82,7 +86,7 @@ define('SERVER_ARCHIVE',SERVER_SRC."/archives"); // 各界面内容存放地址
 
     <!-- 页脚 footer -->
 
-    <?php include __DIR__.'/footer.php'; ?>
+    <?php include_once __DIR__.'/footer.php'; ?>
 
 </body>
 
