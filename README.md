@@ -25,8 +25,11 @@ welancraft.top我的世界服务器网页文件
 welancraft
 │   databaseLink.php  =>  获取数据库数据
 │   header.php  =>  页眉
-│   index.php  =>  正文
-│   pageDeliver.php  =>  获取url参数
+│   footer.php => 页脚
+|   index.php  =>  正文
+│   funcs.php => 函数声明
+|   siteDataClass.php => 数据对象声明
+|   siteException.php => 错误对象声明
 │   siteIcon.jpg  =>  网页图标
 │
 ├───archives
