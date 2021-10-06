@@ -5,7 +5,7 @@ welancraft.top我的世界服务器网页文件
 
 ⚠目前仍在施工中⚠
 
-此项目遵循 [MPL-2.0](https://github.com/royenheart/welancraftSiteFiles/blob/main/LICENSE) 协议
+此网页框架遵循 [MPL-2.0](https://github.com/royenheart/welancraftSiteFiles/blob/main/LICENSE) 协议
 
 若需进行修改部署到自己的服务器，请遵循上述协议
 
@@ -20,37 +20,38 @@ welancraft.top我的世界服务器网页文件
 
 ## 文件结构与说明
 
-```intro
-
-welancraft
-│   databaseLink.php  =>  获取数据库数据
-│   header.php  =>  页眉
-│   footer.php => 页脚
-|   index.php  =>  正文
-│   funcs.php => 函数声明
-|   siteDataClass.php => 数据对象声明
-|   siteException.php => 错误对象声明
-│   siteIcon.jpg  =>  网页图标
-│
-├───archives
-│   │   正文部分内容，详情请见文件夹内README.md文件
-│   │
-│   └───articlePage102
-│           “公告“栏公告内容
-│
-├───assets
-│   ├───css
-│   │       各界面所需css文件
-│   │
-│   └───js
-│           各界面所需js文件
-│
-├───resources
-│       网页所需资源，如图片等，若需部署请自行修改地址和结构
-│
-└───serverDataDisplay
-        MC服务器信息获取，详情请见文件夹内README.md文件
-
+```shell
+WelanCraftSiteFiles
+├─archives - 正文内容存放
+│  └─articlePage102 - 公告内容存放
+├─assets
+│  ├─css - 各页面css文件
+│  │  ├─100
+│  │  ├─101
+│  │  ├─102
+│  │  ├─103
+│  │  ├─104
+│  │  ├─105
+│  │  └─main
+│  └─js - 各页面js文件
+│      ├─100
+│      ├─101
+│      ├─102
+│      ├─103
+│      ├─104
+│      ├─105
+│      └─main
+├─resources - 资源文件夹
+├─serverDataDisplay - 获取各服务器数据
+│   ├─data
+│   └─src
+├─index.php - 主页文件
+├─footer.php - 页脚文件
+├─header.php - 页眉文件
+├─funcs.php - 网页资源获取方法声明
+├─databaseLink.php - 数据库连接
+├─siteDataClass.php - 数据结构声明
+└─siteException.php - 错误声明
 ```
 
 ## 关于使用
@@ -66,14 +67,6 @@ Windows上可使用Xampp集成环境
 ### Issues
 
 [访问官网](https://mc.royenheart.com)，若有任何Bug欢迎于Issues中提出
-
-### Code
-
-可修改archives中各界面的内容展示，可自行修改assets文件夹中对应界面的css和js文件
-
-请注意不要和已有的函数定义等发生冲突，如的确需要进行修改，请修改assets/js/main.js和assets/css/main.css
-
-也欢迎在整体框架上提出宝贵的意见
 
 ## 鸣谢
 
