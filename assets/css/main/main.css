@@ -14,7 +14,7 @@ body {
     width: 100%;
     background-color: black;
     background-size: cover;
-    height: 0px;
+    z-index: 2;
 }
 
 /* 首页图片标题 */
@@ -26,6 +26,7 @@ body {
     user-select: none;
     color: azure;
     position: relative;
+    top: 50%;
     left: 10%;
     z-index: 1;
 }
@@ -39,7 +40,6 @@ body {
     width: 100%;
     background-color: white;
     background: url(/resources/siteSources/articleBac.jpg) repeat-x fixed top;
-    z-index: 10;
 }
 
 /* 正文内容 */
@@ -76,13 +76,4 @@ body {
 
 #footer a:hover {
     border-bottom: 1px greenyellow solid;
-}
-
-/********/
-/* 其他 */
-/********/
-
-/* 各框架显示方式 */
-#picshow,#article,#footer {
-    display: inline-block;
 }

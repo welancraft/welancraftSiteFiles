@@ -1,0 +1,117 @@
+/* 页眉样式 PC端 手机端 宽度较窄 */
+
+/****************************/
+/* PC、宽度大 页眉样式 header*/
+/****************************/
+
+#header,#headerContent,.headerContentBox {
+    background-color: black;
+}
+
+/* 页眉 */
+#header {
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+}
+
+/* 页眉内容框 */
+#headerContent {
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* 各个导航内容框 */
+.headerContentBox {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* 导航内容框 网页信息 */
+#a {
+    font-size: 30px;
+    user-select: none;
+    float: left;
+}
+
+/* 导航内容框 各界面跳转 */
+#b,#c,#d,#e,#f,#g {
+    float: right;
+    margin-right: 5%;
+    margin-top: 6px;
+}
+
+/* 页眉超链接样式 */
+
+.headerContentBox a {
+    color: azure;
+    text-decoration: none;
+}
+
+.headerContentBox {
+    border-bottom: 1px black solid;
+}
+
+.headerContentBox:hover {
+    border-bottom: 1px greenyellow solid;
+}
+
+/******************************/
+/* 手机、宽度窄 页眉样式 header*/
+/******************************/
+
+.nav {
+    float: right;
+    width: 20%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.nav div div{
+    width: 100%;
+    height: 320px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.nav div div p {
+    display: inline-block;
+    margin: 20px 0 0 0;
+    width: 100%;
+    height: 10%;
+}
+
+.nav div div p a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px black solid;
+}
+
+.nav div div p a:hover {
+    border-bottom: 1px greenyellow solid;
+}
+
+.nav div div {
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: height 0.2s ,border 0.2s linear;
+    -moz-transition:height 0.2s ,border 0.2s linear;
+    /* Safari and Chrome */
+    -webkit-transition:height 0.2s ,border 0.2s linear;
+    /* Opera */
+    -o-transition:height 0.2s ,border 0.2s linear;
+}
+
+.nav div:hover div {
+    height: 320px;
+    border: 3px solid greenyellow;
+}
