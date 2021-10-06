@@ -8,11 +8,11 @@
 
 <!-- 加载css文件 -->
 
-<link rel="stylesheet" href="../assets/css/articlePage101.css" />
+<link rel="stylesheet" href="../assets/css/101/articlePage101.css" />
 
 <!-- 加载js文件 -->
 
-<script type="text/javascript" src="../assets/js/articlePage101.js"></script>
+<script type="text/javascript" src="../assets/js/101/articlePage101.js"></script>
 
 <!-- 正文 获取服务器信息并输出 -->
 
@@ -20,7 +20,7 @@
 
 <div id=articlePage101>
 <?php $exitence = count($hosts); // 获取服务器个数 ?>
-<?php include dirname(dirname(__FILE__)) . '/serverDataDisplay/data.php'; ?>
+<?php include_once dirname(dirname(__FILE__)) . '/serverDataDisplay/data.php'; ?>
     <h3>目前公开的服务器共有<label class=content><?php echo $exitence; ?></label>个</h3>
 <?php
     /* 获取图片地址 */

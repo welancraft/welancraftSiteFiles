@@ -8,11 +8,11 @@
 
 <!-- 加载css文件 -->
 
-<link rel="stylesheet" href="../assets/css/articlePage103.css" />
+<link rel="stylesheet" href="../assets/css/103/articlePage103.css" />
 
 <!-- 加载js文件 -->
 
-<script type="text/javascript" src="../assets/js/articlePage103.js"></script>
+<script type="text/javascript" src="../assets/js/103/articlePage103.js"></script>
 
 <div id=articlePage103>
     <h2>QQ主群：965295418</h2>

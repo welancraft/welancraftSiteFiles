@@ -8,11 +8,11 @@
 
 <!-- 加载css文件 -->
 
-<link rel="stylesheet" href="../assets/css/articlePage100.css" />
+<link rel="stylesheet" href="../assets/css/100/articlePage100.css" />
 
 <!-- 加载js文件 -->
 
-<script type="text/javascript" src="../assets/js/articlePage100.js"></script>
+<script type="text/javascript" src="../assets/js/100/articlePage100.js"></script>
 
 <!-- 正文 首页内容 -->
 
