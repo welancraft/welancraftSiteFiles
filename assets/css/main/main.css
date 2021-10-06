@@ -40,6 +40,7 @@ body {
     width: 100%;
     background-color: white;
     background: url(/resources/siteSources/articleBac.jpg) repeat-x fixed top;
+    background-size: cover;
 }
 
 /* 正文内容 */

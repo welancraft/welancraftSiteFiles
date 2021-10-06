@@ -8,7 +8,7 @@
 var illegal = ["100","101","102","103","104","105"]; // 页面id
 
 var picshowSource = {
-    "100":["./resources/siteSources/"+"picshow01.jpg","Lzuer's MC"],
+    "100":["./resources/siteSources/"+"picshow01.jpg","WeLanMC"],
     "101":["./resources/siteSources/"+"picshow02.jpg","服务器列表"],
     "102":["./resources/siteSources/"+"picshow03.jpg","服务器公告"],
     "103":["./resources/siteSources/"+"picshow04.jpg","加入我们"],
@@ -55,20 +55,29 @@ function picshowTextChange(value) {
 }
 
 /**
- * 根据页面尺寸或手机和PC端切换导航栏形式
+ * 判断页面宽度和是否使用手机界面
  * 
+ * @returns true/false
  */
-function navChange() {
+function isSizeOK() {
     var sUserAgent = navigator.userAgent;
     var agentList = ["Android","iPhone","iPad","iPod","Symbian"];
+    return (sUserAgent.indexOf(agentList) > -1 || document.documentElement.clientWidth < 1165)?true:false;
+}
 
-    var headerContent = document.getElementById("headerContent");
+/**
+ * 根据页面尺寸或手机和PC端切换导航栏形式
+ */
+function navChange() {
+    var header = document.getElementById("header");
 
-    if (sUserAgent.indexOf(agentList) > -1 || document.documentElement.clientWidth < 1165) {
-        headerContent.innerHTML = ""+
+    if (isSizeOK()) {
+        header.innerHTML = ""+
+        "<div id=\"headerContent\">"+
         "<div class=headerContentBox id=a><a href=\"https://mc.royenheart.com\">WeLanCraft</a></div>"+
+        "</div>"+
         "<div class=nav>"+
-        "   <div>导航"+
+        "   <div><p>导航&nbsp&nbsp&nbsp</p>"+
         "       <div>"+
         "           <p><a href=\"https://mc.royenheart.com\">首页</a></p>"+
         "           <p><a href=\"https://mc.royenheart.com/index.php?page=101\">服务器</a></p>"+
@@ -80,14 +89,16 @@ function navChange() {
         "   </div>"+
         "</div>";
     } else {
-        headerContent.innerHTML = ""+
+        header.innerHTML = ""+
+        "<div id=\"headerContent\">"+
         "<div class=\"headerContentBox\" id=\"a\"><a href=\"https://mc.royenheart.com\">WeLanCraft</a></div>"+
         "<div class=\"headerContentBox\" id=\"g\"><a href=\"https://mc.royenheart.com/index.php?page=105\">鸣谢</a></div>"+
         "<div class=\"headerContentBox\" id=\"f\"><a href=\"https://mc.royenheart.com/index.php?page=104\">展示</a></div>"+
         "<div class=\"headerContentBox\" id=\"e\"><a href=\"https://mc.royenheart.com/index.php?page=103\">加入</a></div>"+
         "<div class=\"headerContentBox\" id=\"d\"><a href=\"https://mc.royenheart.com/index.php?page=102\">公告</a></div>"+
         "<div class=\"headerContentBox\" id=\"c\"><a href=\"https://mc.royenheart.com/index.php?page=101\">服务器</a></div>"+
-        "<div class=\"headerContentBox\" id=\"b\"><a href=\"https://mc.royenheart.com\">首页</a></div>";
+        "<div class=\"headerContentBox\" id=\"b\"><a href=\"https://mc.royenheart.com\">首页</a></div>"+
+        "</div>"
     }
 }
 
@@ -103,6 +114,13 @@ function load() {
 
     picshowTextChange(urlPage);
 
+    /* 若宽度较小更改正文背景图 */ 
+
+    if(isSizeOK()) {
+        document.getElementById("article").style.backgroundImage = "url(./resources/siteSources/articlePhone.png)";
+    } else {
+        document.getElementById("article").style.backgroundImage = "url(./resources/siteSources/articleBac.jpg)";
+    }
 }
 
 window.onload = load;
@@ -117,4 +135,11 @@ window.onresize = function() {
     var picshow = document.getElementById("picshow");
     picshow.style.height = 1080*(document.body.clientWidth / 1920) + "px";
     
+    /* 若宽度较小更改正文背景图 */ 
+
+    if(isSizeOK()) {
+        document.getElementById("article").style.backgroundImage = "url(./resources/siteSources/articlePhone.png)";
+    } else {
+        document.getElementById("article").style.backgroundImage = "url(./resources/siteSources/articleBac.jpg)";
+    }
 }

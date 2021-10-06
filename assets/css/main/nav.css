@@ -11,37 +11,39 @@
 /* 页眉 */
 #header {
     width: 100%;
-    padding: 10px;
     position: fixed;
-    top: 0px;
     z-index: 999;
 }
 
 /* 页眉内容框 */
 #headerContent {
-    width: 90%;
-    margin-left: 5%;
+    padding: 10px;
+    width: 100%;
 }
 
 /* 各个导航内容框 */
 .headerContentBox {
+    box-sizing: border-box;
     font-size: 18px;
     text-align: center;
-    padding: 10px;
 }
 
-/* 导航内容框 网页信息 */
+/* 导航内容框 网站首页 */
 #a {
+    margin-left: 3%;
     font-size: 30px;
-    user-select: none;
     float: left;
 }
 
 /* 导航内容框 各界面跳转 */
 #b,#c,#d,#e,#f,#g {
     float: right;
-    margin-right: 5%;
     margin-top: 6px;
+    margin-right: 5%;
+}
+
+#g {
+    margin-right: 3%;
 }
 
 /* 页眉超链接样式 */
@@ -64,45 +66,36 @@
 /******************************/
 
 .nav {
-    float: right;
-    width: 20%;
-    text-align: center;
-    padding: 20px;
+    position: fixed;
+    text-align: right;
+    font-size: 18px;
+    margin: 0px;
+    top: 16px;
+    width: 100%;
     color: white;
+    z-index: 3;
+}
+
+.nav div p {
+    margin: 0px;
 }
 
 .nav div div{
+    margin-top: 6px;
+    right: 0px;
+    box-sizing: border-box;
     width: 100%;
     height: 320px;
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 10px;
-}
-
-.nav div div p {
-    display: inline-block;
-    margin: 20px 0 0 0;
-    width: 100%;
-    height: 10%;
-}
-
-.nav div div p a{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    border-bottom: 1px black solid;
-}
-
-.nav div div p a:hover {
-    border-bottom: 1px greenyellow solid;
+    background-color: black;
+    border: 3px solid rgba(22, 21, 21, 0.822);
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
 }
 
 .nav div div {
     overflow: hidden;
     width: 100%;
     height: 0;
-    background-color: #fff;
-    border-radius: 10px;
     transition: height 0.2s ,border 0.2s linear;
     -moz-transition:height 0.2s ,border 0.2s linear;
     /* Safari and Chrome */
@@ -113,5 +106,25 @@
 
 .nav div:hover div {
     height: 320px;
-    border: 3px solid greenyellow;
+    border: 3px solid rgba(22, 21, 21, 0.822);
+}
+
+.nav div div p {
+    text-align: center;
+    display: inline-block;
+    margin: 20px 0 0 0;
+    width: 100%;
+    height: 10%;
+}
+
+.nav div div p a{
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px black solid;
+}
+
+.nav div div p a:hover {
+    border-bottom: 1px greenyellow solid;
 }
