@@ -6,6 +6,7 @@
 
 /**
  * 读取界面参数
+ * 
  * @return string URL
  */
 function curPageURL() {
@@ -28,6 +29,7 @@ function curPageURL() {
 
 /**
  * 根据界面URL获取参数
+ * 
  * @return string URL's params
  */
 function getParams() {
@@ -52,6 +54,7 @@ function getParams() {
 
 /**
  * 判断服务器端文件是否存在
+ * 
  * @author RoyenHeart
  * @param string $fileAddr file address  
  */ 

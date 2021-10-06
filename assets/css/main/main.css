@@ -1,0 +1,88 @@
+body {
+    box-sizing: border-box;
+    margin: 0px; /* 取消浏览器与页面边距 */
+    padding: 0px;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+/*********************/
+/* 图片栏样式 picshow */
+/*********************/
+
+/* 首页图片框架 */
+#picshow {
+    width: 100%;
+    background-color: black;
+    background-size: cover;
+    height: 0px;
+}
+
+/* 首页图片标题 */
+#picshowText {
+    width: 80%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    user-select: none;
+    color: azure;
+    position: relative;
+    left: 10%;
+    z-index: 1;
+}
+
+/**********************/
+/* 正文内容样式 article*/
+/**********************/
+
+/* 正文框架 */
+#article {
+    width: 100%;
+    background-color: white;
+    background: url(/resources/siteSources/articleBac.jpg) repeat-x fixed top;
+    z-index: 10;
+}
+
+/* 正文内容 */
+#articlePage {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+    left: 5%;
+}
+
+/******************/
+/* 页脚样式 footer */
+/******************/
+
+/* 页眉框架 */
+#footer {
+    width: 100%;
+    background-color: black;
+    font-size: 12px;
+    color: azure;
+    background: url(/resources/siteSources/footer.png) repeat-y scroll top;
+    text-align: center;
+}
+
+/* 页脚超链接样式 */
+
+#footer a {
+    color: azure;
+    text-decoration: none;
+    border-bottom: 1px black solid;
+}
+
+#footer a:hover {
+    border-bottom: 1px greenyellow solid;
+}
+
+/********/
+/* 其他 */
+/********/
+
+/* 各框架显示方式 */
+#picshow,#article,#footer {
+    display: inline-block;
+}

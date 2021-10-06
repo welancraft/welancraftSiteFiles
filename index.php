@@ -34,31 +34,33 @@ define('SERVER_ARCHIVE',SERVER_SRC."/archives"); // 各界面内容存放地址
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/siteIcon.jpg" />
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <script type="text/javascript" src="/assets/js/main.js"></script>
+    <link rel="stylesheet" href="/assets/css/main/nav.css" />
+    <link rel="stylesheet" href="/assets/css/main/main.css" />
+    <script type="text/javascript" src="/assets/js/main/main.js"></script>
     <title>WeLanCraft</title>
 </head>
 
 <body>
 
-    <!-- 页眉输出 header -->
+    <!-- 页眉 header -->
 
     <?php include __DIR__ . '/header.php'; ?>
 
-    <!-- 图片栏输出 picshow -->
+    <!-- 首页图片 picshow -->
 
-    <div id=picshow>
-        <img id=picshowPic />
-        <div id=picshowText>
+    <div id=picshow> <!-- 首页图片框架 -->
+        <div id=picshowText> <!-- 首页图片标题 -->
             Loading...
         </div>
-    </div>
+    </div> <!--首页图片框架结束-->
+
+    <!-- 页眉 END -->
 
     <!-- 正文 article -->
 
-    <div id=article>
+    <div id=article> <!-- 正文框架 -->
         <br>
-        <div id=articlePage>
+        <div id=articlePage> <!-- 正文内容 -->
             <?php
             if (!empty($curl)) {
                 if ($curl["page"] == "100") {
@@ -80,13 +82,17 @@ define('SERVER_ARCHIVE',SERVER_SRC."/archives"); // 各界面内容存放地址
                 include __DIR__ . '/archives/articlePage100.php';
             }
             ?>
-        </div>
+        </div> <!-- 正文内容 结束 -->
         <br>
-    </div>
+    </div> <!-- 正文框架结束 -->
+
+    <!-- 正文 END -->
 
     <!-- 页脚 footer -->
 
     <?php include_once __DIR__.'/footer.php'; ?>
+
+    <!-- 正文 END -->
 
 </body>
 

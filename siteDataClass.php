@@ -2,6 +2,7 @@
 
 /**
  * 数据对象声明
+ * 
  * @author RoyenHeart
  */
 
