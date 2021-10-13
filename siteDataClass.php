@@ -7,12 +7,15 @@
  */
 
 /**
- * 服主通讯录
+ * 服主通讯录类
  */
 class Owner {
 
     private $index = array();
 
+    /**
+     * 给定 name，mail，phone，qq 参数添加记录
+     */
     public function __construct($name, $mail, $phone, $qq) {
         if (empty($name)) {
             throw new siteExpectionOwnerUnknown();
@@ -24,6 +27,9 @@ class Owner {
         }
     }
 
+    /**
+     * 通过键名寻找通讯录对应数据
+     */
     public function getData($key) {
         if (!empty($this->index[$key])) {
             return $this->index[$key];
@@ -32,6 +38,9 @@ class Owner {
         }
     }
 
+    /**
+     * 销毁
+     */
     public function __destruct() {
         
     }

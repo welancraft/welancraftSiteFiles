@@ -66,7 +66,9 @@ function isFileExist($fileAddr) {
         return isset($header[0]) && (strpos($header[0], '200') || strpos($header[0], '304'));
     
     } else {
+
         return file_exists($fileAddr);
+    
     }
 
 }
