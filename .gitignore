@@ -1,10 +1,15 @@
 # ignore include folders
-.vscode/*
-resources/*
-phpError/*
-fileBackup/*
+/.vscode/*
+/resources/displays
+/resources/gameClients
+/resources/serverIcons
+/resources/siteSources
+/resources/beianIcon.png
+/phpError/*
+/fileBackup/*
 
 # ignore include files
-databaseLink.php
 
 # ignore exclude
+
+# include specific files
